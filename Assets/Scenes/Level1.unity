@@ -326,6 +326,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xSpeed: 4
+  ySpeed: 4
+  xRange: 3.5
+  yRangeMin: -1
+  yRangeMax: 1.5
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,6 +704,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 963194228}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: circuit
+      value: 
+      objectReference: {fileID: 1802988955}
     - target: {fileID: 6197481680523683816, guid: 746c89d013131e144aaf7c1d3fa34fc6,
         type: 3}
       propertyPath: m_Name
@@ -760,11 +768,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5042056610721882342, guid: 746c89d013131e144aaf7c1d3fa34fc6,
-        type: 3}
-      propertyPath: circuit
-      value: 
-      objectReference: {fileID: 1802988955}
-    m_RemovedComponents:
-    - {fileID: 5042056610721882342, guid: 746c89d013131e144aaf7c1d3fa34fc6, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 746c89d013131e144aaf7c1d3fa34fc6, type: 3}
