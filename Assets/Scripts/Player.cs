@@ -58,9 +58,4 @@ public class Player : MonoBehaviour
 
         transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
     }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        print("player hit something trigger");
-    }
 }
