@@ -1,24 +1,31 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerCollisionHandler : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [Tooltip("In Seconds")][SerializeField] float levelLoadDelay = 1.5f;
+    [Tooltip("Particle Effects Prefab")][SerializeField] GameObject deathFX;
 
     private void OnTriggerEnter(Collider other)
     {
-        print("player hit something trigger");
-        
+        StartDeathSequence();
+
+    }
+
+    private void StartDeathSequence()
+    {
+        print("player hit, stopMovement");
+        SendMessage("OnPlayerDeath");
+        deathFX.SetActive(true);
+        Invoke("ReloadCurrentLevel", levelLoadDelay);
+    }
+
+    private void ReloadCurrentLevel() //string referenced in StartDeathSequence Method
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
     }
 }
