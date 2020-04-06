@@ -19,5 +19,6 @@ public class PlayerCollisionHandler : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         print("player hit something trigger");
+        
     }
 }
