@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     [Tooltip("Explosion Prefab with ParticleSys and AudioSrc")] [SerializeField] GameObject explosionFX;
     [SerializeField] Transform parent;
     [SerializeField] int scorePerHit = 12;
+    [SerializeField] int maxHits = 10;
     ScoreBoard scoreBoard;
 
     private void Start()
@@ -24,6 +25,15 @@ public class Enemy : MonoBehaviour
     private void OnParticleCollision(GameObject other)
     {
         print("particle collided w/Enemy " + gameObject.name);
+        maxHits = maxHits - 1;
+        if(maxHits <= 1)
+        {
+            DestroyEnemy();
+        }
+    }
+
+    private void DestroyEnemy()
+    {
         scoreBoard.ScoreHit(scorePerHit);
         GameObject fx = Instantiate(explosionFX, transform.position, Quaternion.identity);
         fx.transform.parent = parent;

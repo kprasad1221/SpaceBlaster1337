@@ -307,6 +307,7 @@ MonoBehaviour:
   explosionFX: {fileID: 6854694811175899627, guid: 876fed5bb7382e44585bfaaec1ffa430,
     type: 3}
   parent: {fileID: 1041980906}
+  scorePerHit: 12
 --- !u!1 &482921451 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1090395654553690, guid: e14d375f5a36551479fc2f172353b1ba,
@@ -334,6 +335,7 @@ MonoBehaviour:
   explosionFX: {fileID: 6854694811175899627, guid: 876fed5bb7382e44585bfaaec1ffa430,
     type: 3}
   parent: {fileID: 1041980906}
+  scorePerHit: 12
 --- !u!1 &651965543 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1074994750746910, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd,
@@ -361,6 +363,7 @@ MonoBehaviour:
   explosionFX: {fileID: 6854694811175899627, guid: 876fed5bb7382e44585bfaaec1ffa430,
     type: 3}
   parent: {fileID: 1041980906}
+  scorePerHit: 12
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,6 +542,7 @@ MonoBehaviour:
   explosionFX: {fileID: 6854694811175899627, guid: 876fed5bb7382e44585bfaaec1ffa430,
     type: 3}
   parent: {fileID: 1041980906}
+  scorePerHit: 12
 --- !u!1 &829964892 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1754910023302818, guid: 60f26d6465b822444ab5dadf5986bb35,
@@ -560,6 +564,7 @@ MonoBehaviour:
   explosionFX: {fileID: 6854694811175899627, guid: 876fed5bb7382e44585bfaaec1ffa430,
     type: 3}
   parent: {fileID: 1041980906}
+  scorePerHit: 12
 --- !u!1 &881968175 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1754910023302818, guid: 60f26d6465b822444ab5dadf5986bb35,
@@ -581,6 +586,7 @@ MonoBehaviour:
   explosionFX: {fileID: 6854694811175899627, guid: 876fed5bb7382e44585bfaaec1ffa430,
     type: 3}
   parent: {fileID: 1041980906}
+  scorePerHit: 12
 --- !u!4 &897449660 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6200428355354959398, guid: 746c89d013131e144aaf7c1d3fa34fc6,
@@ -903,7 +909,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1916772fb65bd1d48a5ac2f5562efbff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scorePerHit: 12
 --- !u!1 &1260543025 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6854694811175899627, guid: 876fed5bb7382e44585bfaaec1ffa430,
@@ -937,6 +942,7 @@ MonoBehaviour:
   explosionFX: {fileID: 6854694811175899627, guid: 876fed5bb7382e44585bfaaec1ffa430,
     type: 3}
   parent: {fileID: 1041980906}
+  scorePerHit: 12
 --- !u!1 &1289655995
 GameObject:
   m_ObjectHideFlags: 0
@@ -988,6 +994,7 @@ MonoBehaviour:
   explosionFX: {fileID: 6854694811175899627, guid: 876fed5bb7382e44585bfaaec1ffa430,
     type: 3}
   parent: {fileID: 1041980906}
+  scorePerHit: 12
 --- !u!1 &1351795641
 GameObject:
   m_ObjectHideFlags: 0
@@ -1396,6 +1403,7 @@ MonoBehaviour:
   explosionFX: {fileID: 6854694811175899627, guid: 876fed5bb7382e44585bfaaec1ffa430,
     type: 3}
   parent: {fileID: 1041980906}
+  scorePerHit: 12
 --- !u!1001 &1657805885
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2031,12 +2039,12 @@ PrefabInstance:
     - target: {fileID: 5964668175805473477, guid: 746c89d013131e144aaf7c1d3fa34fc6,
         type: 3}
       propertyPath: m_Name
-      value: BulletsLeft
+      value: GunLeft
       objectReference: {fileID: 0}
     - target: {fileID: 5964668176634873383, guid: 746c89d013131e144aaf7c1d3fa34fc6,
         type: 3}
       propertyPath: m_Name
-      value: BulletsRight
+      value: GunRight
       objectReference: {fileID: 0}
     - target: {fileID: 1084296636, guid: 746c89d013131e144aaf7c1d3fa34fc6, type: 3}
       propertyPath: m_Enabled

@@ -13,6 +13,8 @@ public class Player : MonoBehaviour
     [Tooltip("In m")] [SerializeField] float yRangeMin = -1f;
     [Tooltip("In m")] [SerializeField] float yRangeMax = 4f;
 
+    [SerializeField] GameObject[] guns;
+
     [Header("Screen Position Based")]
     [SerializeField] float positionPitchFactor = -5f;
     [SerializeField] float positionYawFactor = 5f;
@@ -37,6 +39,7 @@ public class Player : MonoBehaviour
         {
             ProcessTranslation();
             ProcessRotation();
+            ProcessFiring();
         }
     }
 
@@ -72,5 +75,33 @@ public class Player : MonoBehaviour
     {
         print("Controls Frozen");
         isControlsEnabled = false;
+    }
+
+    private void ProcessFiring()
+    {
+        if(CrossPlatformInputManager.GetButton("Fire"))
+        {
+            FireGuns();
+        }
+        else
+        {
+            CeaseGuns();
+        }
+    }
+
+    private void FireGuns()
+    {
+        foreach (GameObject gun in guns)
+        {
+            gun.SetActive(true);
+        }
+    }
+
+    private void CeaseGuns()
+    {
+        foreach (GameObject gun in guns)
+        {
+            gun.SetActive(false);
+        }
     }
 }
