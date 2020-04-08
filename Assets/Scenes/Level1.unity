@@ -308,6 +308,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 1041980906}
   scorePerHit: 12
+  maxHits: 10
 --- !u!1 &482921451 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1090395654553690, guid: e14d375f5a36551479fc2f172353b1ba,
@@ -336,6 +337,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 1041980906}
   scorePerHit: 12
+  maxHits: 10
 --- !u!1 &651965543 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1074994750746910, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd,
@@ -364,6 +366,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 1041980906}
   scorePerHit: 12
+  maxHits: 10
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,6 +546,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 1041980906}
   scorePerHit: 12
+  maxHits: 10
 --- !u!1 &829964892 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1754910023302818, guid: 60f26d6465b822444ab5dadf5986bb35,
@@ -565,6 +569,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 1041980906}
   scorePerHit: 12
+  maxHits: 10
 --- !u!1 &881968175 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1754910023302818, guid: 60f26d6465b822444ab5dadf5986bb35,
@@ -587,6 +592,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 1041980906}
   scorePerHit: 12
+  maxHits: 10
 --- !u!4 &897449660 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6200428355354959398, guid: 746c89d013131e144aaf7c1d3fa34fc6,
@@ -767,6 +773,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd, type: 3}
+--- !u!1 &998802010 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5964668176634873383, guid: 746c89d013131e144aaf7c1d3fa34fc6,
+    type: 3}
+  m_PrefabInstance: {fileID: 6197636164078846447}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1041980905
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,6 +921,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1916772fb65bd1d48a5ac2f5562efbff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1246661341 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5964668175805473477, guid: 746c89d013131e144aaf7c1d3fa34fc6,
+    type: 3}
+  m_PrefabInstance: {fileID: 6197636164078846447}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1260543025 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6854694811175899627, guid: 876fed5bb7382e44585bfaaec1ffa430,
@@ -943,6 +961,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 1041980906}
   scorePerHit: 12
+  maxHits: 10
 --- !u!1 &1289655995
 GameObject:
   m_ObjectHideFlags: 0
@@ -995,6 +1014,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 1041980906}
   scorePerHit: 12
+  maxHits: 10
 --- !u!1 &1351795641
 GameObject:
   m_ObjectHideFlags: 0
@@ -1404,6 +1424,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 1041980906}
   scorePerHit: 12
+  maxHits: 10
 --- !u!1001 &1657805885
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2100,6 +2121,26 @@ PrefabInstance:
       propertyPath: CollisionModule.collisionMessages
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 897449661, guid: 746c89d013131e144aaf7c1d3fa34fc6, type: 3}
+      propertyPath: guns.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 897449661, guid: 746c89d013131e144aaf7c1d3fa34fc6, type: 3}
+      propertyPath: guns.Array.data[2]
+      value: 
+      objectReference: {fileID: 998802010}
+    - target: {fileID: 897449661, guid: 746c89d013131e144aaf7c1d3fa34fc6, type: 3}
+      propertyPath: guns.Array.data[3]
+      value: 
+      objectReference: {fileID: 1246661341}
+    - target: {fileID: 897449661, guid: 746c89d013131e144aaf7c1d3fa34fc6, type: 3}
+      propertyPath: guns.Array.data[0]
+      value: 
+      objectReference: {fileID: 998802010}
+    - target: {fileID: 897449661, guid: 746c89d013131e144aaf7c1d3fa34fc6, type: 3}
+      propertyPath: guns.Array.data[1]
+      value: 
+      objectReference: {fileID: 1246661341}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 746c89d013131e144aaf7c1d3fa34fc6, type: 3}
 --- !u!1001 &6854694809919557082
